@@ -1,0 +1,80 @@
+@font-face{
+  font-family: 'ubuntu';
+  src:url('UbuntuMono-Regular.ttf');
+}
+
+html{
+  font-family: 'ubuntu', sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.link{
+  cursor: pointer;
+}
+
+.linkMobile{
+  opacity: 0;
+}
+
+svg{
+  width: 100vw;
+  height: 100vh;
+}
+
+.svgMob{
+  margin-top: 50px!important;
+}
+
+body{
+  margin: 0px;
+  transition: background-color 3s;
+  background-color : white;
+}
+
+#blah{
+  opacity: 0;
+  transition: opacity .5s;
+  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blahmobile{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90% !important;
+  font-size: 35px !important;
+  text-align: center;
+}
+
+#buttontop{
+/*  animation: upDown 2s infinite;
+*/}
+
+.kspeep1{
+  transform: translate(5px, 5px);
+}
+
+.animateHand{
+  transform: translate(5px, 5px);
+}
+
+@keyframes upDown{
+ 0%, 100%{
+    transform: translateY(0px);
+  }
+  50%{
+  transform: translateY(-5px);
+  }
+}
+
+.firstHidden{
+  opacity: 0;
+}
+
+.nightrans{
+  transition: 3s opacity;
+}

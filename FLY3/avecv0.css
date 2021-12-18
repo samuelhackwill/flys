@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "Droid";
+	src: url('DroidSans.ttf') format('truetype');
+}
+
+p{
+	font-family: "Droid", sans-serif;
+	font-size: 30;
+	color:red;
+	background-color: white;
+	padding: 5px;
+}
+
+body{
+	margin:0;
+	top:0;
+}
+
+svg {
+	z-index: 1;
+	width: 100%;
+	max-height: 100%;
+	position:absolute;	
+}
+
+#a:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}#b:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}#c:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}#d:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}#e:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}
+#f:hover #bras{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	opacity:1;
+	pointer-events:all;
+}
+
+#bras{
+	-webkit-transition: all 2.5s ease-in;
+	-moz-transition: all 2.5s ease-in;
+	-o-transition: all 2.5s ease-in;
+	transition: all 2.5s ease-in;
+	opacity:0;
+	pointer-events:all;
+}

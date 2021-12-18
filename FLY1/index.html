@@ -1,0 +1,34 @@
+<head>
+	<title>AVEC_V1</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="avecv0.css">
+</head>
+
+
+<script src="snap.svg-min.js"></script>
+
+<body>
+
+  <div id="svg"></div>
+
+  <script type="text/javascript">
+
+    var s = Snap("#svg"); 
+
+    var mySvg = Snap.load("flyer3.svg", function(loadedFragment){
+      s.append(loadedFragment)
+      s.hover(getEventElement)
+    });
+
+    function getEventElement( event ) {
+      if( event.target.localName == 'svg' ) { return }
+        target = event.target.parentNode.id
+      document.getElementById("zouif").innerHTML = target
+
+    }
+
+
+  </script>
+
+
+</body>

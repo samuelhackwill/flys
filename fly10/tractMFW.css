@@ -1,0 +1,37 @@
+svg {
+	width:100%;
+}
+
+@font-face {
+	font-family: "typo";
+	src: url('OfficeCodePro-Regular.ttf') format('truetype');
+}
+
+body {
+	margin:0px;
+	font-family: "typo", sans-serif;
+}
+
+#colones{
+	position: absolute;
+	z-index: 1000;
+}
+
+.flyingText{
+	position: absolute;
+	z-index:0;
+}
+/*
+#samCube:hover{
+	fill:red;
+}
+*/
+#samGroup:hover > path{
+	cursor: pointer;
+	fill:red;
+}
+
+a {
+	text-decoration: underline;
+	fill:red;
+}

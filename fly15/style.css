@@ -1,0 +1,125 @@
+#Layer_1{
+  mix-blend-mode: multiply;
+}
+
+#fumes{
+  mix-blend-mode: multiply;
+
+      -webkit-animation: upanyaway 120s;
+   -moz-animation: upanyaway 120s;
+   -o-animation: upanyaway 120s;
+    animation: upanyaway 120s;
+
+}
+
+
+#cogne
+{
+  	-webkit-animation: onOff 3s infinite;
+   -moz-animation: onOff 3s infinite;
+   -o-animation: onOff 3s infinite;
+    animation: onOff 3s infinite;
+}
+
+#cache_droit{
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#cache_droit:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+/*
+#moi:hover>path{
+	cursor: pointer;
+	fill:red;
+}*/
+
+@keyframes onOff {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  10%{
+    opacity: 0;
+  }
+
+  13%{
+    opacity: 1;
+  }  
+
+  18%{
+    opacity: 0;
+  }
+
+  21%{
+    opacity: 1;
+  }
+
+  64%{
+    opacity: 0;
+  }
+
+  70%{
+    opacity: 1;
+  }
+
+  76%{
+    opacity: 0;
+  }
+
+  82%{
+    opacity: 1;
+  }  
+
+  88%{
+    opacity: 0;
+  }
+
+  94%{
+    opacity: 1;
+  }
+}
+
+@keyframes upanyaway{
+  0%{
+    transform: translateY(6500px);
+  }
+
+  100%{
+    transform: translateY(-7200px);
+  }
+
+}
+
+/*
+@-o-keyframes upDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@-moz-keyframes upDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes upDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}*/

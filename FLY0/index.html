@@ -1,0 +1,40 @@
+<head>
+	<title>AVEC_V0</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="avecv0.css">
+</head>
+
+
+<script src="snap.svg-min.js"></script>
+<script src="jquery-2.2.1.min.js"></script>
+
+<body>
+
+  <p id="zouif"></p>
+
+  <div id="svg"></div>
+
+  <script type="text/javascript">
+
+    var s = Snap("#svg"); 
+
+    var mySvg = Snap.load("flyer_verbeux.svg", function(loadedFragment){
+      s.append(loadedFragment)
+      s.hover(getEventElement)
+    });
+
+    function getEventElement( event ) {
+      if( event.target.localName == 'svg' ) { return }
+        target = event.target.parentNode.id
+      document.getElementById("zouif").innerHTML = target
+
+    }
+
+    $(document).mousemove(function(e){
+      $("#zouif").css({left:e.pageX, top:e.pageY});
+    });
+
+  </script>
+
+
+</body>

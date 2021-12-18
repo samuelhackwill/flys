@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "typo";
+    src: url('mplus-2m-regular.ttf') format('opentype');
+  }
+
+svg{
+	width:100%;
+}
+
+body{
+	margin:0px;
+}
+
+#titleBag{
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+
+}
+
+.st10{
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+
+}
+
+#hand{
+	-webkit-animation: handGenerate 2s infinite;
+   -moz-animation: handGenerate 2s infinite;
+   -o-animation: handGenerate 2s infinite;
+    animation: handGenerate 2s infinite;
+}
+
+#top:hover{
+	cursor: pointer;
+	fill:blue;
+}
+
+#top:active{
+	transform: translateY(2px);
+}
+
+
+@keyframes handGenerate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@-o-keyframes handGenerate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@-moz-keyframes handGenerate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes handGenerate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}

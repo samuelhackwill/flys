@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "typo";
+	src: url('mplus-2m-regular.ttf') format('truetype');
+}
+
+body{
+	width:100%;
+	height:100%;
+	margin:0px;
+	position: absolute;
+
+	font-family: "typo", sans-serif;
+
+	background-color:white;
+
+	animation: nuitjourBody 75s linear;
+	animation-iteration-count:infinite;
+}
+
+#XMLID_41_, #XMLID_39_{
+	animation: nuitjourShadowsTop 75s linear;
+	animation-iteration-count:infinite;
+	fill:#16002D;
+	opacity:.6;
+}
+
+#XMLID_35_, #XMLID_33_{
+	animation: nuitjourShadowsBot 75s linear;
+	animation-iteration-count:infinite;
+	fill:#16002D;
+	opacity:.6;
+}
+
+#XMLID_187_{
+	cursor: pointer;
+}
+
+#XMLID_187_:hover{
+	fill:red;
+}
+
+#svg{
+	width:100%;
+}
+/*
+svg g{
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}*/
+
+svg{
+	position: absolute;
+	left:0px;
+	width:100%;
+}
+
+#tiret{
+    position: absolute;
+    left: 16vw;
+    top: 7vh;
+    font-size: 10vw;
+}
+
+#six{
+    position: absolute;
+	font-size: 10vw;
+    top: 50vh;
+    position: absolute;
+    left: 39vw;
+}
+
+@keyframes nuitjourBody{
+  0%, 100% {background-color: white;}
+  45% {background-color:white;}
+  75% {background-color:#16002D;}
+  85% {background-color:#16002D;}
+}
+/*
+@keyframes nuitjourShadows {
+  0%, 100% {transform:matrix(0.189, 0, -0.982, -0.189, 100.7993, 175.425);}
+  35% {opacity:0;}
+  50% {transform:matrix(0.189, 0, 0.982, -0.189, 101.3348, 175.3846); opacity:1;}
+  75% {opacity:0;}
+}
+*/
+/*@keyframes nuitjourShadows{
+	0%, 100% {opacity:0;transform:matrix(0.189, 0, -0.982, -0.189, 100.7993, 175.425);}
+	25%{transform:matrix(0.189, 0, 0.982, -0.189, 101.3348, 175.3846);}
+	37.5%{opacity:0;transform:matrix(0.189, 0, -0.982, -0.189, 100.7993, 175.425);}
+	35%{opacity:1;}
+	75%{opacity:0;}
+}
+*/
+@keyframes nuitjourShadowsTop{
+  0%, 100% {opacity:0;transform:matrix(0.189, 0, -0.982, -0.189, 100.7993, 175.425);}
+  45% {opacity:.6;}
+  75% {opacity:.6;transform:matrix(0.189, 0, 0.982, -0.189, 101.3348, 175.3846)}
+  85% {opacity:0;}
+}
+
+@keyframes nuitjourShadowsBot{
+  0%, 100% {opacity:0;transform:matrix(0.189, 0, -0.982, -0.189, 401.8708, 459.9753);}
+  45% {opacity:.6;}
+  75% {opacity:.6;transform:matrix(0.189, 0, 0.982, -0.189, 402.102, 460.0168);}
+  85% {opacity:0;}
+}

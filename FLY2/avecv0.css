@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "Droid";
+	src: url('DroidSans.ttf') format('truetype');
+}
+
+p{
+	font-family: "Droid", sans-serif;
+	font-size: 30;
+	color:red;
+	background-color: white;
+	padding: 5px;
+}
+
+body{
+	margin:0;
+	top:0;
+	background-color:#00ff00;
+}
+
+svg {
+	z-index: 1;
+	width: 100%;
+	max-height: 100%;
+	position:absolute;	
+}
+
+#arbres:hover{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity:0;
+	pointer-events:all;
+}
+
+g{
+	-webkit-transition: all 6s ease-out;
+	-moz-transition: all 6s ease-out;
+	-o-transition: all 6s ease-out;
+	transition: all 6s ease-out;
+	opacity: 1;
+	pointer-events:all;
+}
+
+#zouif{
+	position:absolute;
+	z-index: 2;
+
+}

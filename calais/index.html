@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open Space Carton '21</title>
+</head>
+	<body>
+
+		<p id="intro"> Ce site recense les illustrations réalisées par les étudiant.e.s de l'école d'art du Calaisis lors d'un exercice de dessin effectué à la souris et au clavier. Pour plus d'informations sur le workshop, conduit par <a href="http://shh.ovh">Samuel Hackwill</a> et <a href="https://jobalcony.top/">Jacob Lyon</a> (5 jours en Octobre 2020 puis 2 jours en Janvier 2021) vous pouvez cliquer <a href="http://www.ecole-art-calaisis.fr/suite-du-projet-open-space-carton-avec-samuel-hackwill-et-jacob-lyon-presentation-du-tiret-du-six-220121/">ici</a> et <a href="http://www.ecole-art-calaisis.fr/openspace-carton-du-1910-2310/">là</a>. Pour voir les dessins que Samuel produit utilisant cette méthode, vous pouvez cliquer <a href="http://flys.shh.ovh">à cet endroit</a>. Pour voir une vidéo de Samuel qui explique comment il fait, vous pouvez cliquer <a href="https://www.youtube.com/watch?v=vWSzFAHk0PA">sur ce dernier lien</a>.
+		</p>
+
+		<img src="assets/illus.jpg">
+
+		<img id="firstDiv" src="assets/Claire.svg" onload="loadNextImg()">
+		<p>↖ Claire</p>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+
+	var lesBoss = ["Margot", "Marina", "Cassandre",  "Nina", "Maxence", "Aude", "Noemie", "Salma", "Samuel", "Suzy"]
+
+	loadNextImg = function(){
+		// first check that there is still one BOSS in the array
+
+		if (lesBoss[0]==undefined) {
+			return
+		}else{
+			// get next Boss
+			var nextBoss = lesBoss.shift()
+			
+			// append img node to document
+			var imgNode = document.createElement("IMG")
+			imgNode.setAttribute('src', 'assets/'+nextBoss+'.svg');
+			imgNode.setAttribute('onload', 'loadNextImg()');
+			document.body.appendChild(imgNode)
+
+			// also append artist name to document
+			var pNode = document.createElement("P")
+			pNode.innerHTML = "↖ "+nextBoss
+			document.body.appendChild(pNode)
+		}	
+	}
+
+</script>
+
+<style type="text/css">
+
+	#intro{
+		margin-left:15%;
+		width: 70%;
+		margin-top:150px;
+	}
+
+	img{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	p{
+		font-size:2vw;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+</style>

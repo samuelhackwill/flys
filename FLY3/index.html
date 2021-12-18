@@ -1,0 +1,27 @@
+<head>
+	<title>AVEC_V3</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="avecv0.css">
+</head>
+
+
+<script src="snap.svg-min.js"></script>
+
+<body>
+
+  <div id="svg"></div>
+
+  <script type="text/javascript">
+
+    var s = Snap("#svg"); 
+
+    var mySvg = Snap.load("flyer.svg", function(loadedFragment){
+      s.append(loadedFragment)
+    });
+
+
+
+  </script>
+
+
+</body>

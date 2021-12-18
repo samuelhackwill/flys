@@ -1,0 +1,58 @@
+svg{
+	width:100%;
+  margin:0px;
+}
+
+body{
+  background-color:black;
+	margin:0px;
+}
+
+path{
+  -webkit-transition: fill 1s ease-in-out;
+  -moz-transition: fill 1s ease-in-out;
+  -o-transition: fill 1s ease-in-out;
+  transition: fill 1s ease-in-out;
+
+}
+
+a:hover>path{
+  fill:pink;
+}
+
+.hidden{
+  -webkit-transition: transform 3.5s ease-in-out;
+  -moz-transition: transform 3.5s ease-in-out;
+  -o-transition: transform 3.5s ease-in-out;
+  transition: transform 3.5s ease-in-out;
+}
+
+/*.initialTranslate{
+    -webkit-animation: initialTranslate 3.5s;
+  -moz-animation: initialTranslate 3.5s;
+  -o-animation: initialTranslate 3.5s;
+  animation: initialTranslate 3.5s;
+}
+*/
+.animate{
+  -webkit-animation: loopTranslate 8s infinite;
+   -moz-animation: loopTranslate 8s infinite;
+   -o-animation: loopTranslate 8s infinite;
+    animation: loopTranslate 8s infinite;
+}
+
+@keyframes loopTranslate {
+  0%, 100% {
+    transform: translate(-3.5px,3.5px);
+  }
+
+  50% {
+    transform: translate(3.5px,-3.5px);
+  }
+}
+
+@keyframes initialTranslate {
+  100% {
+    transform: translate(3.5px,-3.5px);
+  }
+}

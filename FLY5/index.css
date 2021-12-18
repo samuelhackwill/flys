@@ -1,0 +1,127 @@
+@font-face {
+	font-family: "typo";
+	src: url('FreightMicroLight.ttf') format('truetype');
+}
+
+p{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+p:hover{
+	cursor: default;
+}
+
+body{
+	background-color: rgba(128, 128, 128, 0.26);
+}
+
+#voteD{
+	position:fixed;
+	left:596px;
+	top:114px;
+
+	font-family: "typo", serif;
+
+	color:white;
+
+	font-size: 50px;
+}
+
+#voteG{
+	position:fixed;
+	left:178px;
+	top:114px;
+
+	font-family: "typo", serif;
+
+	color:white;
+
+	font-size: 50px;
+}
+
+
+#grostexte{
+	font-family: "typo", serif;
+
+	color:red;
+
+	font-size: 50px;
+
+	top:33%;
+	width:30%;
+	left:35%;
+
+	margin-bottom:800px;
+
+	position:absolute;
+}
+
+#svg{
+	z-index:2;
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	-webkit-transition: opacity 15s ease-in-out;
+	-moz-transition: opacity 15s ease-in-out;
+	-o-transition: opacity 15s ease-in-out;
+	transition: opacity 15s ease-in-out; 
+
+	pointer-events: none;
+}
+
+#balance{
+	pointer-events: none;
+}
+
+#XMLID_1_{
+	pointer-events: none;
+}
+#XMLID_2_{
+	pointer-events: none;
+}
+
+#produit{
+	pointer-events: all;
+
+	-webkit-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-o-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+#axe{
+	pointer-events: all;
+
+	-webkit-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-o-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+#action{
+	pointer-events: all;
+
+	-webkit-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-o-transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+#action:hover{
+	cursor: pointer;
+}
+
+#produit:hover{
+	cursor: pointer;
+}
+
+.visible{
+	opacity: 1;
+}
+
+.invisible{
+	opacity: 0;
+}
