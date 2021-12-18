@@ -45,16 +45,6 @@ isMobile = function() {
 };
 
 FlowRouter.route('/', {
-  name:"home",  
-    action: function() {
-        // test logique téléphone ou ordi? et redirect to reader
-        FlowRouter.go("/subs")
-    }
-});
-
-
-FlowRouter.route('/subs', {
-  name:"subs",
     action: function() {
       if(isMobile()){
             BlazeLayout.render('mobileLayout');

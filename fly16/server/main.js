@@ -50,7 +50,7 @@ const serverRendering = (req, res, next) =>
           const html = `
             <!html>
             <head>
-              <title>Le tiret du six aux Subs 24-25/11/21</title>
+              <title>Le tiret du six à Montbéliard 14/01/21</title>
               <meta property="og:image" content="${rootUrl}/preview.jpg"/>
               <meta property="og:image:url" content="${rootUrl}/preview.jpg"/>
               <meta property="og:image:secure_url" content="${rootUrl}/preview.jpg"/>
@@ -59,7 +59,7 @@ const serverRendering = (req, res, next) =>
           <meta property="og:image:height" content="643" />
               <meta property="og:url" content=${rootUrl}/>
               <meta property="og:type" content="website"/>
-              <meta property="og:description" content="Du 24 au 26 Novembre, la pièce de Samuel joue aux Subsistances, Lyon."/>
+              <meta property="og:description" content="Le 14 Janvier, la pièce de Samuel joue aux Bains Douches, Montbéliard."/>
               <meta property="og:title" content="Le tiret du six aux Subs 11/21"/>
           `;
 
