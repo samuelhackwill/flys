@@ -51,8 +51,8 @@ body{
 }
 
 #buttontop{
-/*  animation: upDown 2s infinite;
-*/}
+  animation: upDown 2s infinite;
+}
 
 .kspeep1{
   transform: translate(5px, 5px);
