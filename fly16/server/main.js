@@ -4,7 +4,17 @@ import { WebApp } from "meteor/webapp"
 Meteor.startup(() => {
   // code to run on server at startup
   scoreArray = []
-})
+
+  // push a shitload of scores in the db to compensate for the fact that we deleted all the data.
+  min = Math.ceil(1500);
+  max = Math.floor(50000);
+
+  for (var i = 651; i >= 0; i--) {
+    scoreArray.push(  Math.floor(Math.random() * (max - min + 1) + min))
+  }
+
+  console.log("the score is ", scoreArray)
+});
 
 Meteor.methods({
   logScore(raceTimes) {

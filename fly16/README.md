@@ -1,9 +1,12 @@
 ### IN ORDER TO INITIALIZE SVG =
 
 in mobile svg styles =
+in clicamicale, the styles with a blue fill (it was st18 at some point)
 st18 = opacity 0
 
-get id "handpeep1" add class="hand"
+
+this is automated by "initiate SVG"
+<!-- get id "handpeep1" add class="hand"
 get id "handpeep2" add class="hand"
 get id "handpeep3" add class="hand"
 get id "handpeep4" add class="hand"
@@ -25,7 +28,7 @@ get id "clicamicale" add class="firstHidden nightrans"
 get id "clicresas" add class="firstHidden nightrans"
 
 get id "light" add style="mix-blend-mode:multiply" add class="firstHidden nightrans"
-get id "color" add style="mix-blend-mode:multiply" add class="firstHidden nightrans"
+get id "color" add style="mix-blend-mode:multiply" add class="firstHidden nightrans" -->
 
 edit links
 "clicresas"

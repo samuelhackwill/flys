@@ -84,7 +84,13 @@ Template.desktopLayout.onRendered(function () {
     pressed = false
     raceTimes.start = new Date()
     document.getElementById("blah").style.opacity = "1"
-  }, 1000)
+  },1000)
+
+
+  setTimeout(() => {
+    document.getElementsByTagName("svg")[0].style.opacity = 1
+  }, 50);
+
 })
 
 Template.mobileLayout.onRendered(function () {
@@ -109,7 +115,14 @@ Template.mobileLayout.onRendered(function () {
     pressed = false
     raceTimes.start = new Date()
     document.getElementById("blah").style.opacity = "1"
-  }, 1000)
+  },1000)
+
+
+  setTimeout(() => {
+    document.getElementsByTagName("svg")[0].style.opacity = 1
+  }, 50);
+
+
 })
 
 function animateHand(i) {
@@ -228,9 +241,9 @@ logScore = function () {
   })
 }
 
-initializeSvg = function () {
-  const handIds = ["handpeep1", "handpeep2", "handpeep3", "handpeep4", "handpeep5", "handpeep6", "handpeep7", "handpeep8", "handpeep9", "handpeep11", "handpeep0", "handtrio", "handduethom", "handduetmeuf"]
-  const toHide = ["scribb", "buttonbot", "buttontop", "buttontop", "light", "clicsamuel", "clicresas", "clicamicale", "color", "chyMAP", "chyDATE"]
+initializeSvg = function(){
+  const handIds = ["handpeep1","handpeep2","handpeep3","handpeep4","handpeep5","handpeep6","handpeep7","handpeep8", "handpeep9", "handpeep11", "handpeep0","handtrio","handduethom","handduetmeuf"]
+  const toHide = ["scribb", "buttonbot", "buttontop", "buttontop", "light", "clicsamuel", "clicresas", "clicamicale", "chyMAP", "chyDATE"]
   const mixBlendGuy = ["light", "color"]
 
   for (var i = handIds.length - 1; i >= 0; i--) {
@@ -243,15 +256,22 @@ initializeSvg = function () {
   for (var i = toHide.length - 1; i >= 0; i--) {
     target = document.getElementById(toHide[i])
     if (target != null) {
-      target.classList.add("firstHidden", "nightrans")
+      target.classList.add("firstHidden")
+      setTimeout(() => {
+        target.classList.add("nightrans")
+      }, 50);
     }
   }
 
   for (var i = mixBlendGuy.length - 1; i >= 0; i--) {
     target = document.getElementById(mixBlendGuy[i])
-    if (target != null) {
-      target.classList.add("firstHidden", "nightrans")
-      target.style.mixBlendMode = "multiply"
+    if (target !=null) {
+      target.classList.add("firstHidden")
+      target.style.mixBlendMode="multiply"     
+      setTimeout(() => {
+        target.classList.add("nightrans")
+      }, 50);
+ 
     }
   }
 }
