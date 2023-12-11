@@ -35,6 +35,7 @@ module.exports = {
   },
 
   mongo: {
+    version: '3.4.1',
     oplog: true,
     servers: {
       fly16: {},

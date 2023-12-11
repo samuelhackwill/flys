@@ -4,6 +4,16 @@ import { WebApp } from 'meteor/webapp';
 Meteor.startup(() => {
   // code to run on server at startup
   scoreArray = []
+
+  // push a shitload of scores in the db to compensate for the fact that we deleted all the data.
+  min = Math.ceil(1500);
+  max = Math.floor(50000);
+
+  for (var i = 621; i >= 0; i--) {
+    scoreArray.push(  Math.floor(Math.random() * (max - min + 1) + min))
+  }
+
+  console.log("the score is ", scoreArray)
 });
 
 Meteor.methods({
@@ -44,13 +54,13 @@ const serverRendering = (req, res, next) =>
     {
       const ua = req.headers['user-agent'];
 
-      if (/bot|whatsapp|facebook|twitter|pinterest|google|baidu|bing|msn|duckduckgo|teoma|slurp|yandex/i.test(ua)) 
+      if (/bot|whatsapp|curl|facebook|twitter|pinterest|google|baidu|bing|msn|duckduckgo|teoma|slurp|yandex/i.test(ua)) 
       {
 
           const html = `
             <!html>
             <head>
-              <title>Le tiret du six à Montbéliard 14/01/21</title>
+              <title>Le tiret du six à Chambéry 5/5/23 -> 6/5/23</title>
               <meta property="og:image" content="${rootUrl}/preview.jpg"/>
               <meta property="og:image:url" content="${rootUrl}/preview.jpg"/>
               <meta property="og:image:secure_url" content="${rootUrl}/preview.jpg"/>
@@ -59,7 +69,7 @@ const serverRendering = (req, res, next) =>
           <meta property="og:image:height" content="643" />
               <meta property="og:url" content=${rootUrl}/>
               <meta property="og:type" content="website"/>
-              <meta property="og:description" content="Le 14 Janvier, la pièce de Samuel joue aux Bains Douches, Montbéliard."/>
+              <meta property="og:description" content="Hé mais super la pièce de Samuel joue à Malraux (Chambéry) les 5 et 6 mai 2023 woohooooo"/>
               <meta property="og:title" content="Le tiret du six aux Subs 11/21"/>
           `;
 
